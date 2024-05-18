@@ -7,5 +7,6 @@
 </template>
 
 <style scoped>
+@import "./styles/global.scss";
 
 </style>
