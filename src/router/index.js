@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Index from '@/views/Index.vue'
-import Button from '@/views/Button.vue'
-import Typography from '@/views/Typography.vue'
+import ButtonView from '@/views/ButtonView.vue'
+import TypographyView from '@/views/TypographyView.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -14,12 +14,12 @@ const router = createRouter({
       {
         path: '/button',
         name: 'Button',
-        component: Button
+        component: ButtonView
       },
       {
         path: '/typography',
         name: 'Typography',
-        component: Typography
+        component: TypographyView
       },
     ]
 })
