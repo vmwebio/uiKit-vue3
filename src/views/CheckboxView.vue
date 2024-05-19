@@ -1,5 +1,5 @@
 <script setup>
-  import {ref, computed } from 'vue'
+  import { ref } from 'vue'
   import Checkbox from '@/components/ui/checkbox/Checkbox.vue'
   import CheckboxGroup from '@/components/ui/checkbox/CheckboxGroup.vue'
 
@@ -23,12 +23,12 @@
   const switchProfessional = ref(false)
 
   // Вычисляемое свойство для отображения имен выбранных героев
-  const selectedHeroNames = computed(() => {
-    return selectedHeroes.value.map(id => {
-      const hero = listOfHeroes.value.find(hero => hero.id === id)
-      return hero ? hero.name : null
-    }).filter(name => name !== null)
-  })
+  function getSelectedHeroNames() {
+  return selectedHeroes.value.map(id => {
+    const hero = listOfHeroes.value.find(hero => hero.id === id)
+    return hero ? hero.name : null
+  }).filter(name => name !== null)
+}
 </script>
 
 <template>
@@ -57,7 +57,7 @@
   <h2 class="heading-2">Checkbox Group</h2>
   <div class="line line_block">
     <!-- Отображение выбранных героев ({{selectedHero}} по id) -->
-    <p>Selected Heroes: {{selectedHeroNames}}</p>
+    <p>Selected Heroes: {{getSelectedHeroNames()}}</p>
     <checkbox-group v-model:value="selectedHeroes" name="heroes" :options="listOfHeroes"/>
   </div>
   <h2 class="heading-2">Switch</h2>
