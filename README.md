@@ -41,39 +41,39 @@
    - `global.scss`: Глобальные стили для всего приложения.
 
 
-### Структура проекта
+## Структура проекта
 
-src/
-├── views/
-│   ├── Index.vue
-│   ├── ButtonView.vue
-│   ├── TypographyView.vue
-│   ├── CheckboxView.vue
-│   ├── RadiobuttonView.vue
-│   ├── ProgressView.vue
-│   ├── InputView.vue
-│   ├── TabsView.vue
-│   └── TableView.vue
-├── components/
-│   ├── ui/
-│   │   ├── Button.vue
-│   │   ├── Checkbox/
-│   │   │   └── Checkbox.vue
-│   │   ├── Progress/
-│   │   │   ├── ProgressBar.vue
-│   │   │   └── ProgressCircle.vue
-│   │   ├── Radiobutton.vue
-│   │   ├── table/
-│   │   │   ├── BaseTable.vue
-│   │   │   ├── TableColumn.vue
-│   │   │   └── TableRow.vue
-│   │   ├── Tabs.vue
-│   │   └── layout/
-│   │       └── Layout.vue
-│   └── router/
-│       └── index.js
-└── styles/
-    └── global.scss
+- **src/**
+  - **views/**
+    - `Index.vue`
+    - `ButtonView.vue`
+    - `TypographyView.vue`
+    - `CheckboxView.vue`
+    - `RadiobuttonView.vue`
+    - `ProgressView.vue`
+    - `InputView.vue`
+    - `TabsView.vue`
+    - `TableView.vue`
+  - **components/**
+    - **ui/**
+      - `Button.vue`
+      - **Checkbox/**
+        - `Checkbox.vue`
+      - **Progress/**
+        - `ProgressBar.vue`
+        - `ProgressCircle.vue`
+      - `Radiobutton.vue`
+      - **table/**
+        - `BaseTable.vue`
+        - `TableColumn.vue`
+        - `TableRow.vue`
+      - `Tabs.vue`
+      - **layout/**
+        - `Layout.vue`
+    - **router/**
+      - `index.js`
+  - **styles/**
+    - `global.scss`
 
 
 ### Использование
