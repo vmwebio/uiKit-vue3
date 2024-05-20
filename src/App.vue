@@ -3,7 +3,7 @@ import LayoutHeader from "@/components/layout/Header.vue";
 import LayoutSidebar from "@/components/layout/Sidebar.vue";
 import { ref } from "vue";
 
-const isOpenMenu = ref(false);
+const isOpenMenu = ref(true);
 
 const toggleMenu = () => {
   isOpenMenu.value = !isOpenMenu.value;
